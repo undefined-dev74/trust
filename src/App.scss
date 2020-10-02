@@ -11,7 +11,7 @@
 
 @import "./scss/components/button";
 //-----------  Layouts Section --------------
-
+@import './scss/layout/navbar';
 //custom bootstrap
 
-// @import "custom.scss" ;
+@import "./scss/custom.scss" ;
