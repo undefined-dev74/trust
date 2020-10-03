@@ -2,7 +2,7 @@
   padding: 1.3rem 1rem;
   background-color:$color-primary;
   &-brand {
-    padding-left: 4rem;
+    padding-left: 7.5rem;
     font-family: $font-primary;
     font-size: 3rem;
     letter-spacing: 1px;
@@ -12,7 +12,7 @@
 
     }
     svg {
-      fill: #000000;
+      fill: #A649E9;
     }
   }
 
@@ -32,30 +32,30 @@
       .nav-link {
         font-family: $font-secondary;
         font-size: 1.3rem;
-        text-transform: uppercase;
-        font-weight: 600;
+        text-transform: capitalize;
+        font-weight: 500;
         line-height: 1rem;
         color: aliceblue;
       }
 
-      .nav-link::before {
+      .nav-link::after {
         position: absolute;
         content: ".";
         display: inline-block;
-        // color: transparent;
-        text-align: center;
         background-color: #ffffff;
-        height: 3px;
+        height: 2px;
         bottom: 0;
         right: 0;
         left: 0;
         width: 0%;
-        margin: auto;
+        margin: 0 auto;
+        transition: 300ms linear;
+        transition-property: width;
         border-radius: 1rem;
         overflow: hidden;
       }
 
-      .nav-link:hover::before {
+      .nav-link:hover::after {
         width: 100%;
         transform: scaleX(1);
       }

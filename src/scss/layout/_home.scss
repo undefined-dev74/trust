@@ -1,10 +1,19 @@
 .header__container {
-   div, .blue-purple-gradient {
-        background: linear-gradient(135deg, rgba(50,187,241,1) 0%, rgba(166,73,233,1) 68%, rgba(166,73,233,1) 100%);
-    }
-   .header__slider {
+    
+  .container, .jumbotron,
+  .blue-purple-gradient {
+      min-height: 80vh;
+    background-image: linear-gradient(
+      135deg,
+      rgba(50, 187, 241, 1) 0%,
+      rgba(166, 73, 233, 1) 68%,
+      rgba(166, 73, 233, 1) 100%
+    );
+    
+  }
+  .header__slider {
     position: absolute;
-    top: 25%;
+    top: 30%;
     left: 6%;
     bottom: 0;
     display: block;
@@ -12,7 +21,9 @@
     z-index: 100;
     text-align: left;
     padding-left: 0.3125rem;
-   } 
+    height: 50%;
+    width: 50%;
+  }
   .header__slider-h1 {
     color: white;
     font-family: $font-secondary;
@@ -21,8 +32,9 @@
     line-height: 1;
     white-space: pre-line;
     margin-bottom: 0;
+    margin-bottom: 1rem;
   }
-  
+
   .header__slider-h3 {
     color: white;
     font-family: inherit;
@@ -31,26 +43,28 @@
     line-height: 1;
     margin-bottom: 0.25em;
     white-space: pre-line;
-    margin-top: 0
+    margin-bottom: 1rem;
+    text-transform: capitalize;
   }
-  
+
   .header__slider-p {
     color: white;
     font-family: inherit;
     font-size: 15px;
     font-weight: normal;
     line-height: 2;
-    margin-bottom: 1.875em;
+    margin-bottom: 1rem;
     white-space: pre-line;
+    width: 50rem;
   }
-  
+
   .slide-button {
-    min-width: 15em;
-    padding: 0 2.5em;
+    min-width: 16em;
+    // padding: 0 2.5em;
     border: 1px solid white;
     border-radius: 12.5em;
     color: white;
-    font-family: inherit;
+    font-family: $font-primary;
     font-size: 1.1rem;
     font-weight: 700;
     line-height: 3.75em;
@@ -58,18 +72,23 @@
     display: inline-block;
     text-align: center;
     transition: 300ms linear;
-    transition-property: color, background;
     margin: 1.875em 1.25em 1.875em 0;
-    
+    letter-spacing: 2px;
     &-active {
-        border: none;
-        background: #08d380;
-        color: aliceblue;
-        transition: all ease .5s;
-        background: linear-gradient(to right, rgba(70,200,255,1) 0%, rgba(129,211,126,1) 100%);
-        box-shadow: 1rem 1rem 3.4rem -1.1rem rgba(0,0,0,0.75);
+      border: none;
+      background: #08d380;
+      color: aliceblue;
+      transition: all ease 0.5s;
+      background: linear-gradient(
+        to right,
+        rgba(70, 200, 255, 1) 0%,
+        rgba(129, 211, 126, 1) 100%
+      );
+      box-shadow: 1rem 1rem 3.4rem -1.1rem rgba(0, 0, 0, 0.75);
     }
+    
+
   }
   
-  
+
 }

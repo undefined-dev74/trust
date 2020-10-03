@@ -3,7 +3,7 @@ import React from "react";
 const Navbar = () => {
   return (
     <header className='container'>
-      <nav className="navbar navbar-light  navbar-expand-lg navbar-expand-md">
+      <nav className="navbar sticky navbar-light  navbar-expand-lg navbar-expand-md">
         <a className="navbar-brand animate__pulse animate__repeat-2" href="./">
           <svg
             width="1.2em"
@@ -19,7 +19,7 @@ const Navbar = () => {
         </a>
 
         <ul className="navbar-nav">
-          <li className="nav-item">
+          <li className="nav-item active">
             <a className="nav-link" href="./">
               Home
             </a>
