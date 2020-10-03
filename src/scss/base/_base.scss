@@ -16,8 +16,10 @@ $bp-small  : 31.25em; //500px
 }
 
 
-html{
-    
+html,
+body{
+    background-color: #eaf0f3;
+    overflow: hidden;
     box-sizing: border-box; 
     font-size: 62.5%; // 1rem = 10px 10px/16px = 62.5%
 
@@ -38,7 +40,12 @@ html{
     }
 }
 
-body{
-    // padding: 1rem;
-    background-color: #eaf0f3;
+.container-fluid, .container {
+    padding: 0;
+    
+@media only screen and(min-width: $bp-largest){
+        max-width: 100vw;
+    }
+
+
 }
