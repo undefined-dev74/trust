@@ -20,7 +20,9 @@ const Staff = () => {
               <div className="img-wrap d-flex align-items-stretch">
                 <img
                   className="img align-self-stretch"
-                  src={"../images/Team_pics/Staff-image-1"}
+                  src={
+                    "https://trust-lh77512.slack.com/files/U01BUGZ0RA7/F01C5F78W6P/efc98daf-3019-435f-ab61-3ec469e3c60f.jpeg"
+                  }
                   alt="Staff-img"
                 />
               </div>
