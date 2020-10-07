@@ -3,13 +3,13 @@ import React from "react";
 const Navbar = () => {
   return (
     <header className='container'>
-      <nav className="navbar sticky navbar-light  navbar-expand-lg navbar-expand-md">
+      <nav className="navbar navbar-light  navbar-expand-lg navbar-expand-md">
         <a className="navbar-brand animate__pulse animate__repeat-2" href="./">
           <svg
             width="1.2em"
             height="1.2em"
             viewBox="0 0 16 16"
-            class="bi bi-hash"
+            className="bi bi-hash"
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
           >

@@ -1,28 +1,41 @@
 .navbar {
   padding: 1.3rem 1rem;
-  background-color:$color-primary;
+  background-color: $color-secondary; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #a044ff,
+    #6a3093
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #a044ff,
+    #6a3093
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   &-brand {
     padding-left: 7.5rem;
-    font-family: $font-primary;
+    font-family: $font-secondary;
     font-size: 3rem;
-    letter-spacing: 1px;
-    
-    &-text{
-      color: #ffffff;
+    letter-spacing: 2px;
+   
+    cursor: pointer;
+    &-text {
+    color: #ffffff;
 
     }
     svg {
-      fill: #A649E9;
+      fill: #302f31;
+      cursor: pointer;
     }
   }
 
   &-nav {
     padding-right: 4rem;
-      
+
     .nav-item {
       position: relative;
       display: inline-block;
       overflow: hidden;
+      margin-right: 4rem;
       .nav-link,
       .nav-link::before,
       .nav-link::after {
@@ -31,10 +44,10 @@
 
       .nav-link {
         font-family: $font-secondary;
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         text-transform: capitalize;
         font-weight: 500;
-        line-height: 1rem;
+        line-height: 1.2rem;
         color: aliceblue;
       }
 
@@ -59,14 +72,14 @@
         width: 100%;
         transform: scaleX(1);
       }
-      
+
       &:not(:last-child) {
-                margin-right: 1rem;
-            }
+        margin-right: 1.5rem;
+      }
     }
   }
 
-  &-expand-lg{
+  &-expand-lg {
     justify-content: space-between;
   }
 }

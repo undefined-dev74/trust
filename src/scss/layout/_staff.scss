@@ -1,0 +1,123 @@
+.ftco-section {
+  padding: 7rem 0;
+  position: relative;
+}
+
+.staff {
+  &__heading-section &__subheading {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+    color: $color-primary;
+
+    background: -webkit-linear-gradient(
+      to right,
+      #a044ff,
+      #6a3093
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #a044ff,
+      #6a3093
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__heading-section &__heading {
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  &__heading-section p {
+    font-size: 1.5rem;
+    font-family: $font-secondary;
+    color: $color-charcol;
+  }
+
+  &__profile .img {
+    height: 15rem;
+    width: 15rem;
+    display: block;
+    margin: 0 auto;
+    background-position: top center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+
+  img,
+  .img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  h3,
+  &__text {
+    font-size: 2.4rem;
+    font-family: $font-secondary;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    color: $color-charcol;
+  }
+
+  &__text-subheading {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: black;
+    color: #31de79;
+    display: block;
+    letter-spacing: 1px;
+
+    color: $color-primary;
+
+    background: -webkit-linear-gradient(
+      to right,
+      #a044ff,
+      #6a3093
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #a044ff,
+      #6a3093
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__social {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .ftco-social li {
+      list-style: none;
+      display: inline-block;
+    }
+
+    .ftco-social li a span {
+      color: $color-primary;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      margin-right: 1.2rem;
+    }
+  }
+
+  .ftco-social {
+    opacity: 1;
+    transition: all 0.3s ease;
+    padding: 0;
+  }
+}
