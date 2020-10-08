@@ -4,10 +4,10 @@ const Staff = () => {
   return (
     <section className="ftco-section">
       <div className="container">
-        <div className="row justify-content-center pb-5">
+        <div className="row justify-content-center mb-5 pb-5">
           <div className="col-md-6 staff__heading-section  text-center ">
             <span className="staff__subheading">About Us</span>
-            <h2 className="mb-4 staff__heading">meet our team</h2>
+            <h2 className="mb-5 staff__heading">meet our team</h2>
             <p className="mt-0 mb-2">
               Far far away, behind the word mountains, far from the countries
               Vokalia and Consonantia
@@ -124,7 +124,9 @@ const Staff = () => {
               <div className="img-wrap d-flex align-items-stretch">
                 <img
                   className="img align-self-stretch"
-                  src={"../images/Team_pics/Staff-image-3"}
+                  src={
+                    "https://files.slack.com/files-pri/T01C0GHGKEY-F01CWN91656/whatsapp_image_2020-01-16_at_1.53.53_pm.jpeg"
+                  }
                   alt="Staff-img"
                 />
               </div>
