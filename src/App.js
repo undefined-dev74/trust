@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import Staff from "./components/Staff";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
+import Footer from "./components/Footer";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "./App.scss";
@@ -15,7 +16,8 @@ function App() {
       {/* <Home /> */}
       {/* <Staff /> */}
       {/* <Contact /> */}
-      <Projects />
+      {/* <Projects /> */}
+      <Footer />
     </div>
   );
 }
