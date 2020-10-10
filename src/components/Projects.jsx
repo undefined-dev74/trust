@@ -6,8 +6,8 @@ export default class Projects extends Component {
       <section className="container">
         <div className="row justify-content-center mt-5 mb-5 pb-3">
           <div className="col-md-6 staff__heading-section  text-center ">
-            <span className="staff__subheading">Accomplishents</span>
-            <h2 className="mb-3 staff__heading">our projects</h2>
+            <span className="staff__subheading">Services</span>
+            <h2 className="mb-3 staff__heading">our services</h2>
             <p className="mt-0 mb-2">
               Quality service. Customer-specific technologies. Comprehensive
               expertise.

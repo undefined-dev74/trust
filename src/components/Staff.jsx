@@ -78,7 +78,7 @@ const Staff = () => {
             </div>
             <div className="text d-flex align-items-center justify-content-center pt-3 text-center">
               <div>
-                <h3 className="mb-3 staff__text">Pradyuman Trivedi</h3>
+                <h3 className="mb-3 staff__text">Pradhumn trivedi</h3>
                 <span className="position staff__text-subheading mb-4">
                   lead software dev
                 </span>
