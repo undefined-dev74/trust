@@ -109,13 +109,13 @@ export default function Footer() {
                   <li>
                     <i className="icon  fas fa-map-marker-alt"></i>
                     <span className="text ml-3">
-                      203 Fake St. Mountain View, San Francisco, California, USA
+                      59, kesariya paras 2, Bhilwara (Rajasthan)
                     </span>
                   </li>
                   <li>
                     <a href="">
                       <i className="icon  fas fa-phone-alt"></i>
-                      <span className="text">+91 123456789</span>
+                      <span className="text">+91-9636001161</span>
                     </a>
                   </li>
                   <li>

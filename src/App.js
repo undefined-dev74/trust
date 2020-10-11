@@ -13,10 +13,10 @@ function App() {
   return (
     <div className="container-fluid">
       <Navbar />
-      {/* <Home /> */}
-      {/* <Staff /> */}
-      {/* <Contact /> */}
-      {/* <Projects /> */}
+      <Home />
+      <Staff />
+      <Contact />
+      <Projects />
       <Footer />
     </div>
   );
