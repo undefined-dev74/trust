@@ -39,28 +39,28 @@ const Staff = () => {
                     <li>
                       <a href="/">
                         <span className="icon">
-                          <i class="fab fa-twitter"></i>
+                          <i className="fab fa-twitter"></i>
                         </span>
                       </a>
                     </li>
                     <li>
                       <a href="/">
                         <span className="icon">
-                          <i class="fab fa-linkedin-in"></i>
+                          <i className="fab fa-linkedin-in"></i>
                         </span>
                       </a>
                     </li>
                     <li>
                       <a href="/">
                         <span className="icon">
-                          <i class="fab fa-instagram"></i>
+                          <i className="fab fa-instagram"></i>
                         </span>
                       </a>
                     </li>
                     <li>
                       <a href="/">
                         <span className="icon">
-                          <i class="fab fa-facebook"></i>
+                          <i className="fab fa-facebook"></i>
                         </span>
                       </a>
                     </li>
@@ -90,28 +90,28 @@ const Staff = () => {
                     <li>
                       <a href="/">
                         <span className="icon">
-                          <i class="fab fa-twitter"></i>
+                          <i className="fab fa-twitter"></i>
                         </span>
                       </a>
                     </li>
                     <li>
                       <a href="/">
                         <span className="icon">
-                          <i class="fab fa-linkedin-in"></i>
+                          <i className="fab fa-linkedin-in"></i>
                         </span>
                       </a>
                     </li>
                     <li>
                       <a href="/">
                         <span className="icon">
-                          <i class="fab fa-instagram"></i>
+                          <i className="fab fa-instagram"></i>
                         </span>
                       </a>
                     </li>
                     <li>
                       <a href="/">
                         <span className="icon">
-                          <i class="fab fa-facebook"></i>
+                          <i className="fab fa-facebook"></i>
                         </span>
                       </a>
                     </li>
@@ -141,28 +141,28 @@ const Staff = () => {
                     <li>
                       <a href="/">
                         <span className="icon">
-                          <i class="fab fa-twitter"></i>
+                          <i className="fab fa-twitter"></i>
                         </span>
                       </a>
                     </li>
                     <li>
                       <a href="/">
                         <span className="icon">
-                          <i class="fab fa-linkedin-in"></i>
+                          <i className="fab fa-linkedin-in"></i>
                         </span>
                       </a>
                     </li>
                     <li>
                       <a href="/">
                         <span className="icon">
-                          <i class="fab fa-instagram"></i>
+                          <i className="fab fa-instagram"></i>
                         </span>
                       </a>
                     </li>
                     <li>
                       <a href="/">
                         <span className="icon">
-                          <i class="fab fa-facebook"></i>
+                          <i className="fab fa-facebook"></i>
                         </span>
                       </a>
                     </li>
@@ -194,28 +194,28 @@ const Staff = () => {
                     <li>
                       <a href="/">
                         <span className="icon">
-                          <i class="fab fa-twitter"></i>
+                          <i className="fab fa-twitter"></i>
                         </span>
                       </a>
                     </li>
                     <li>
                       <a href="/">
                         <span className="icon">
-                          <i class="fab fa-linkedin-in"></i>
+                          <i className="fab fa-linkedin-in"></i>
                         </span>
                       </a>
                     </li>
                     <li>
                       <a href="/">
                         <span className="icon">
-                          <i class="fab fa-instagram"></i>
+                          <i className="fab fa-instagram"></i>
                         </span>
                       </a>
                     </li>
                     <li>
                       <a href="/">
                         <span className="icon">
-                          <i class="fab fa-facebook"></i>
+                          <i className="fab fa-facebook"></i>
                         </span>
                       </a>
                     </li>
@@ -247,28 +247,28 @@ const Staff = () => {
                     <li>
                       <a href="/">
                         <span className="icon">
-                          <i class="fab fa-twitter"></i>
+                          <i className="fab fa-twitter"></i>
                         </span>
                       </a>
                     </li>
                     <li>
                       <a href="/">
                         <span className="icon">
-                          <i class="fab fa-linkedin-in"></i>
+                          <i className="fab fa-linkedin-in"></i>
                         </span>
                       </a>
                     </li>
                     <li>
                       <a href="/">
                         <span className="icon">
-                          <i class="fab fa-instagram"></i>
+                          <i className="fab fa-instagram"></i>
                         </span>
                       </a>
                     </li>
                     <li>
                       <a href="/">
                         <span className="icon">
-                          <i class="fab fa-facebook"></i>
+                          <i className="fab fa-facebook"></i>
                         </span>
                       </a>
                     </li>

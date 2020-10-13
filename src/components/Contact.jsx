@@ -18,44 +18,44 @@ export default function Contact() {
           <div className="align-self-stretch box p-4  text-center">
             <div className="contact__section-icon d-flex align-items-center justify-content-center">
               <span className="icon-map-sign">
-                <i class="fas fa-map-signs"></i>
+                <i className="fas fa-map-signs"></i>
               </span>
             </div>
             <h3 className="mb-5">Address</h3>
-            <p mb-3>198 West 21th Street, Suite 721 New York NY 10016</p>
+            <p >198 West 21th Street, Suite 721 New York NY 10016</p>
           </div>
         </div>
         <div className="col-md-6 col-lg-3 d-flex">
           <div className="align-self-stretch box p-4  text-center">
             <div className="contact__section-icon d-flex align-items-center justify-content-center">
               <span className="icon-map-sign">
-                <i class="fas fa-phone"></i>
+                <i className="fas fa-phone"></i>
               </span>
             </div>
             <h3 className="mb-5">contact</h3>
-            <p mb-3>+91 123456789</p>
+            <p >+91 123456789</p>
           </div>
         </div>
         <div className="col-md-6 col-lg-3 d-flex">
           <div className="align-self-stretch box p-4  text-center">
             <div className="contact__section-icon d-flex align-items-center justify-content-center">
               <span className="icon-map-sign">
-                <i class="far fa-paper-plane"></i>
+                <i className="far fa-paper-plane"></i>
               </span>
             </div>
             <h3 className="mb-5">email address</h3>
-            <p mb-3>support@trustcare.com</p>
+            <p >support@trustcare.com</p>
           </div>
         </div>
         <div className="col-md-6 col-lg-3 d-flex">
           <div className="align-self-stretch box p-4  text-center">
             <div className="contact__section-icon d-flex align-items-center justify-content-center">
               <span className="icon-map-sign">
-                <i class="fas fa-globe-asia"></i>
+                <i className="fas fa-globe-asia"></i>
               </span>
             </div>
             <h3 className="mb-5">website</h3>
-            <p mb-3>trust@career.com</p>
+            <p >trust@career.com</p>
           </div>
         </div>
       </div>

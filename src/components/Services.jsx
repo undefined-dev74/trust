@@ -12,18 +12,23 @@ export default class Projects extends Component {
               Quality service. Customer-specific technologies. Comprehensive
               expertise.
             </p>
+            <h4 className='mt-4'>
+              Combining in-depth industry knowledge and technological expertise,
+              our team provides world-class IT services and solutions for
+              companies of any size, from all across the globe.
+            </h4>
           </div>
         </div>
         <div className="row d-flex">
           <div className="col-md-12 testimonial">
-              <div className="col-md-3 d-flex">
-                  <div className="testimonial-entry justify-content-end">
-                      {/* <img src={require('../images/testomonial/pic-development')} alt=""/> */}
-                  </div>
+            <div className="col-md-3 d-flex">
+              <div className="testimonial-entry justify-content-end">
+             
               </div>
-              <div className="col-md-3 d-flex"></div>
-              <div className="col-md-3 d-flex"></div>
-              <div className="col-md-3 d-flex"></div>
+            </div>
+            <div className="col-md-3 d-flex"></div>
+            <div className="col-md-3 d-flex"></div>
+            <div className="col-md-3 d-flex"></div>
           </div>
         </div>
       </section>

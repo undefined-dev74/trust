@@ -17,10 +17,10 @@ export default function Footer() {
                   <a href="./" className="footer__social-icon-a">
                     <i className="fab fa-twitter"></i>
                   </a>
-                  <a href="" className="footer__social-icon-a">
+                  <a href="./" className="footer__social-icon-a">
                     <i className="fab fa-facebook"></i>
                   </a>
-                  <a href="" className="footer__social-icon-a">
+                  <a href="./" className="footer__social-icon-a">
                     <i className="fab fa-instagram"></i>
                   </a>
                 </li>
@@ -32,31 +32,31 @@ export default function Footer() {
               <h2 className="footer__heading-2">Links</h2>
               <ul className="list-unstyled">
                 <li className="mb-4">
-                  <a href="">
+                  <a href="./">
                     <i className="fas fa-arrow-right mr-2"></i>
                     Home
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a href="">
+                  <a href="./">
                     <i className="fas fa-arrow-right mr-2"></i>
                     About Us
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a href="">
+                  <a href="./">
                     <i className="fas fa-arrow-right mr-2"></i>
                     Service
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a href="">
+                  <a href="./">
                     <i className="fas fa-arrow-right mr-2"></i>
                     Career
                   </a>
                 </li>
                 <li className="mb-2">
-                  <a href="">
+                  <a href="./">
                     <i className="fas fa-arrow-right mr-2"></i>
                     Contact Us
                   </a>
@@ -69,31 +69,31 @@ export default function Footer() {
               <h2 className="footer__heading-2">Services</h2>
               <ul className="list-unstyled">
                 <li className="mb-4">
-                  <a href="">
+                  <a href="./">
                     <i className="fas fa-arrow-right mr-2"></i>
                     Web Design
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a href="">
+                  <a href="./">
                     <i className="fas fa-arrow-right mr-2"></i>
                     Web Development
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a href="">
+                  <a href="./">
                     <i className="fas fa-arrow-right mr-2"></i>
                     Business Strategy
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a href="">
+                  <a href="./">
                     <i className="fas fa-arrow-right mr-2"></i>
                     Data Analytics
                   </a>
                 </li>
                 <li className="mb-2">
-                  <a href="">
+                  <a href="./">
                     <i className="fas fa-arrow-right mr-2"></i>
                     App Development
                   </a>
@@ -113,13 +113,13 @@ export default function Footer() {
                     </span>
                   </li>
                   <li>
-                    <a href="">
+                    <a href="./">
                       <i className="icon  fas fa-phone-alt"></i>
                       <span className="text">+91-9636001161</span>
                     </a>
                   </li>
                   <li>
-                    <a href="">
+                    <a href="./">
                       <i className="icon  fas fa-envelope"></i>
                       <span className="text">support@trust.com</span>
                     </a>
@@ -145,7 +145,7 @@ export default function Footer() {
                 aria-hidden="true"
               ></i>
               by
-              <a className="footer-brand ml-1" href="#" target="blank">
+              <a className="footer-brand ml-1" href="./" target="blank">
                 #Trust
               </a>
             </p>
