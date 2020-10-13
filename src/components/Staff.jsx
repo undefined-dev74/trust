@@ -19,7 +19,7 @@ const Staff = () => {
         </div>
         <div className="row container ml-2 px-4">
           <div className="col-md-6 col-lg">
-            <div  className="staff__profile">
+            <div className="staff__profile">
               <div className="img-wrap d-flex align-items-stretch">
                 <img
                   className="img align-self-stretch"

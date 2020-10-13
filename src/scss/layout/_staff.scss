@@ -1,6 +1,11 @@
 .ftco-section {
   padding: 7rem 0;
   position: relative;
+  
+  .container {
+  max-width: 90vw;
+    
+  }
 }
 
 .staff {
@@ -47,6 +52,7 @@
     margin: 0 auto;
     background-position: top center;
     border-radius: 50%;
+    border: 3px solid $purple-gradient;
     transition: all 0.3s ease;
   }
 
