@@ -7,6 +7,7 @@ export default function Home() {
       <div className="jumbotron blue-purple-gradient">
         
           <div className="header__slider animate__animated animate__pulse">
+            <span className='subheading mb-2'>Welcome to the Trust</span>
             <h1 className="header__slider-h1">TRUST</h1>
             <h3 className="header__slider-h3">Your Trusted technology partner</h3>
             <p className="header__slider-p text-truncate text-wrap">

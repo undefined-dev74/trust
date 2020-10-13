@@ -1,5 +1,8 @@
 import React from "react";
-
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init();
 const Staff = () => {
   return (
     <section className="ftco-section">
@@ -16,7 +19,7 @@ const Staff = () => {
         </div>
         <div className="row container ml-2 px-4">
           <div className="col-md-6 col-lg">
-            <div className="staff__profile">
+            <div  className="staff__profile">
               <div className="img-wrap d-flex align-items-stretch">
                 <img
                   className="img align-self-stretch"
@@ -78,7 +81,7 @@ const Staff = () => {
             </div>
             <div className="text d-flex align-items-center justify-content-center pt-3 text-center">
               <div>
-                <h3 className="mb-3 staff__text">Pradhumn trivedi</h3>
+                <h3 className="mb-3 staff__text">Pradhumn Trivedi</h3>
                 <span className="position staff__text-subheading mb-4">
                   lead software dev
                 </span>
