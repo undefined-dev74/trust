@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import Staff from "./components/Staff";
 import Contact from "./components/Contact";
 import Services from "./components/Services";
+import Technologies from "./components/Technologies";
 import Footer from "./components/Footer";
 
 import "bootstrap/dist/css/bootstrap.css";
@@ -17,6 +18,7 @@ function App() {
       <Staff />
       <Contact />
       <Services />
+      <Technologies />
       <Footer />
     </div>
   );
