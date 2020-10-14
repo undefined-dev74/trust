@@ -1,0 +1,29 @@
+.technologies__banner {
+    
+    .container {
+        width: 90vw;
+    }
+    
+  &-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15rem;
+    height: 15rem;
+    background: rgba(0, 0, 0, 0.05);
+    margin: 2rem auto;
+    margin-bottom: 3rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    position: relative;
+
+    .icon {
+      color: #a044ff;
+      position: absolute;
+      font-size: 7rem;
+      // transition: translateX(-50%) translateY(50%);
+    }
+  }
+}
