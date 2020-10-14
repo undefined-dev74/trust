@@ -1,9 +1,44 @@
 import React from "react";
-import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
-// ..
-AOS.init();
+
 const Staff = () => {
+  const users = [
+    {
+      id: 1,
+      name: "Chirag Maliwal",
+      designation: "Lead Software Dev",
+      imgURL:
+        "https://www.linkpicture.com/q/efc98daf-3019-435f-ab61-3ec469e3c60f.jpeg",
+    },
+    {
+      id: 2,
+      name: "Pradhumn Trivedi",
+      designation: "Lead Software Dev",
+      imgURL: "https://www.linkpicture.com/q/Pradyuman.jpeg",
+    },
+    {
+      id: 3,
+      name: "Vivek Sharma",
+      designation: "Associate Software Dev",
+      imgURL: "https://www.linkpicture.com/q/vivek71017_B9SCPCyDMFe.jpg",
+    },
+    {
+      id: 4,
+      name: "Rakhi Biswas",
+      designation: "Business Development Ex",
+      imgURL:
+        "https://ca.slack-edge.com/T01C0GHGKEY-U01BR8AJEKX-22ae40d64ac5-512",
+    },
+    {
+      id: 5,
+      name: "Aman Jha",
+      designation: "FrontEnd Web Developer",
+      imgURL:
+        "https://media-exp1.licdn.com/dms/image/C4D03AQGEtO-VTT5aUw/profile-displayphoto-shrink_400_400/0?e=1607558400&v=beta&t=nQhXH9DmZBT39nKY3Vy_guB1WQdYbYi221a6puvCVVA",
+    },
+  ];
+
+  const cla = ["twitter", "linkedin-in", "instagram", "facebook"];
+
   return (
     <section className="ftco-section">
       <div className="container">
@@ -18,265 +53,46 @@ const Staff = () => {
           </div>
         </div>
         <div className="row container ml-2 px-4">
-          <div className="col-md-6 col-lg">
-            <div className="staff__profile">
-              <div className="img-wrap d-flex align-items-stretch">
-                <img
-                  className="img align-self-stretch"
-                  src="https://www.linkpicture.com/q/efc98daf-3019-435f-ab61-3ec469e3c60f.jpeg"
-                  alt="Staff-img"
-                />
-              </div>
-            </div>
-            <div className="text d-flex align-items-center justify-content-center pt-3 text-center">
-              <div>
-                <h3 className="mb-3 staff__text">Chirag Maliwal</h3>
-                <span className="position staff__text-subheading mb-4">
-                  lead software dev
-                </span>
-                <div className="faded staff__social">
-                  <ul className="ftco-social text center mb-2">
-                    <li>
-                      <a href="/">
-                        <span className="icon">
-                          <i className="fab fa-twitter"></i>
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/">
-                        <span className="icon">
-                          <i className="fab fa-linkedin-in"></i>
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/">
-                        <span className="icon">
-                          <i className="fab fa-instagram"></i>
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/">
-                        <span className="icon">
-                          <i className="fab fa-facebook"></i>
-                        </span>
-                      </a>
-                    </li>
-                  </ul>
+          {users.map(({ id, imgURL, name, designation }) => {
+            return (
+              <React.Fragment key={id}>
+                <div className="col-md-6 col-lg">
+                  <div className="staff__profile">
+                    <div className="img-wrap d-flex align-items-stretch">
+                      <img
+                        className="img align-self-stretch"
+                        src={imgURL}
+                        alt="Staff-img"
+                      />
+                    </div>
+                  </div>
+                  <div className="text d-flex align-items-center justify-content-center pt-3 text-center">
+                    <div>
+                      <h3 className="mb-3 staff__text">{name}</h3>
+                      <span className="position staff__text-subheading mb-4">
+                        {designation}
+                      </span>
+                      <div className="faded staff__social">
+                        <ul className="ftco-social text center mb-2">
+                          {cla.map((cl) => {
+                            return (
+                              <li key={cla.indexOf(cl)}>
+                                <a href="/">
+                                  <span className="icon">
+                                    <i className={`fab fa-${cl}`}></i>
+                                  </span>
+                                </a>
+                              </li>
+                            );
+                          })}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-6 col-lg">
-            <div className="staff__profile">
-              <div className="img-wrap d-flex align-items-stretch">
-                <img
-                  className="img align-self-stretch"
-                  src="https://www.linkpicture.com/q/Pradyuman.jpeg"
-                  alt="Staff-img"
-                />
-              </div>
-            </div>
-            <div className="text d-flex align-items-center justify-content-center pt-3 text-center">
-              <div>
-                <h3 className="mb-3 staff__text">Pradhumn Trivedi</h3>
-                <span className="position staff__text-subheading mb-4">
-                  lead software dev
-                </span>
-                <div className="faded staff__social">
-                  <ul className="ftco-social text center mb-2">
-                    <li>
-                      <a href="/">
-                        <span className="icon">
-                          <i className="fab fa-twitter"></i>
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/">
-                        <span className="icon">
-                          <i className="fab fa-linkedin-in"></i>
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/">
-                        <span className="icon">
-                          <i className="fab fa-instagram"></i>
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/">
-                        <span className="icon">
-                          <i className="fab fa-facebook"></i>
-                        </span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-6 col-lg">
-            <div className="staff__profile">
-              <div className="img-wrap d-flex align-items-stretch">
-                <img
-                  src="https://www.linkpicture.com/q/vivek71017_B9SCPCyDMFe.jpg"
-                  className="img align-self-stretch"
-                  alt="Staff-img"
-                />
-              </div>
-            </div>
-            <div className="text d-flex align-items-center justify-content-center pt-3 text-center">
-              <div>
-                <h3 className="mb-3 staff__text">Vivek Sharma</h3>
-                <span className="position staff__text-subheading mb-4">
-                  Associate software dev
-                </span>
-                <div className="faded staff__social">
-                  <ul className="ftco-social text center mb-2">
-                    <li>
-                      <a href="/">
-                        <span className="icon">
-                          <i className="fab fa-twitter"></i>
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/">
-                        <span className="icon">
-                          <i className="fab fa-linkedin-in"></i>
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/">
-                        <span className="icon">
-                          <i className="fab fa-instagram"></i>
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/">
-                        <span className="icon">
-                          <i className="fab fa-facebook"></i>
-                        </span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-6 col-lg">
-            <div className="staff__profile">
-              <div className="img-wrap d-flex align-items-stretch">
-                <img
-                  className="img align-self-stretch"
-                  src={
-                    "https://ca.slack-edge.com/T01C0GHGKEY-U01BR8AJEKX-22ae40d64ac5-512"
-                  }
-                  alt="Staff-img"
-                />
-              </div>
-            </div>
-            <div className="text d-flex align-items-center justify-content-center pt-3 text-center">
-              <div>
-                <h3 className="mb-3 staff__text">Rakhi Biswas</h3>
-                <span className="position staff__text-subheading mb-4">
-                  Business Development exe
-                </span>
-                <div className="faded staff__social">
-                  <ul className="ftco-social mb-3">
-                    <li>
-                      <a href="/">
-                        <span className="icon">
-                          <i className="fab fa-twitter"></i>
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/">
-                        <span className="icon">
-                          <i className="fab fa-linkedin-in"></i>
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/">
-                        <span className="icon">
-                          <i className="fab fa-instagram"></i>
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/">
-                        <span className="icon">
-                          <i className="fab fa-facebook"></i>
-                        </span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-6 col-lg">
-            <div className="staff__profile">
-              <div className="img-wrap d-flex align-items-stretch">
-                <img
-                  className="img align-self-stretch"
-                  src={
-                    "https://media-exp1.licdn.com/dms/image/C4D03AQGEtO-VTT5aUw/profile-displayphoto-shrink_400_400/0?e=1607558400&v=beta&t=nQhXH9DmZBT39nKY3Vy_guB1WQdYbYi221a6puvCVVA"
-                  }
-                  alt="Staff-img"
-                />
-              </div>
-            </div>
-            <div className="text d-flex align-items-center justify-content-center pt-3 text-center">
-              <div>
-                <h3 className="mb-3 staff__text">Aman Jha</h3>
-                <span className="position staff__text-subheading mb-4">
-                  frontend UI/UX dev
-                </span>
-                <div className="faded staff__social">
-                  <ul className="ftco-social text center mb-2">
-                    <li>
-                      <a href="/">
-                        <span className="icon">
-                          <i className="fab fa-twitter"></i>
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/">
-                        <span className="icon">
-                          <i className="fab fa-linkedin-in"></i>
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/">
-                        <span className="icon">
-                          <i className="fab fa-instagram"></i>
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/">
-                        <span className="icon">
-                          <i className="fab fa-facebook"></i>
-                        </span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+              </React.Fragment>
+            );
+          })}
         </div>
       </div>
     </section>

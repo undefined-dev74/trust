@@ -1,4 +1,5 @@
 import React from "react";
+// import { getClassNames, classList } from "dynamic-class-list";
 
 export default function Technologies() {
   return (
@@ -22,7 +23,7 @@ export default function Technologies() {
           </div>
           <div className="col text-center mt-5 mt-md-0 ">
             <div className="technologies__banner-icon">
-              <i className=" icon fab fa-vuejs"></i>
+              <i className=" icon fab fa-node-js"></i>
             </div>
           </div>
           <div className="col text-center mt-5 mt-md-0 ">
