@@ -1,0 +1,60 @@
+// ? Primary Linear Gradient
+@mixin primaryGradient($primary, $secondary) {
+  background-color: $primary; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    $primary,
+    $secondary
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    $primary,
+    $secondary
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+// ? Secondary Dark Gradient
+@mixin darkGradient($light, $dark) {
+  background: $color-purple-light;
+  background: -moz-linear-gradient(-45deg, $light 0%, $dark 100%);
+  background: -webkit-gradient(
+    left top,
+    right bottom,
+    color-stop(0%, $light),
+    color-stop(100%, $dark)
+  );
+  background: -webkit-linear-gradient(-45deg, $light 0%, $dark 100%);
+  background: -o-linear-gradient(-45deg, $light 0%, $dark 100%);
+  background: -ms-linear-gradient(-45deg, $light 0%, $dark 100%);
+  background: -webkit-linear-gradient(315deg, $light 0%, $dark 100%);
+  background: -o-linear-gradient(315deg, $light 0%, $dark 100%);
+  background: linear-gradient(135deg, $light 0%, $dark 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a044ff', endColorstr='#6a3093', GradientType=1 );
+}
+// Color Variables
+// $top: #ecf0f5;
+// $bottom: #d7bbf1;
+
+@mixin linearGradient($top, $bottom) {
+  background: $top; /* Old browsers */
+  background: -webkit-linear-gradient(-45deg, $top 0%, $bottom 100%);
+  background: -o-linear-gradient(-45deg, $top 0%, $bottom 100%);
+  background: -ms-linear-gradient(-45deg, $top 0%, $bottom 100%);
+  background: -webkit-linear-gradient(315deg, $top 0%, $bottom 100%);
+  background: -o-linear-gradient(315deg, $top 0%, $bottom 100%);
+  background: linear-gradient(135deg, $top 0%, $bottom 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ecf0f5', endColorstr='#b7bbf1',GradientType=0 ); /* IE6-9 */
+}
+
+@mixin border-radius($px) {
+  -webkit-border-radius: $px;
+  -moz-border-radius: $px;
+  -ms-border-radius: $px;
+  border-radius: $px;
+}
+
+@mixin box-shadow($top, $left, $blur, $color) {
+  -webkit-box-shadow: $top $left $blur $color;
+  -moz-box-shadow: $top $left $blur $color;
+  box-shadow: $top $left $blur $color;
+}
