@@ -1,31 +1,25 @@
 .services {
-    max-width: 85%;
-    margin-top: 3rem;
-    margin: 0 auto;
-    // background-color: #F6F5F5;
-  }
-  
-  .services-content {
-    margin-bottom: 10rem;
+  max-width: 85%;
+  margin-top: 3rem;
+  margin: 0 auto;
+  // background-color: #F6F5F5;
 }
 
+.services-content {
+  margin-bottom: 10rem;
+}
 
 .shadow__box {
   display: flex;
   flex-direction: column;
   text-align: center;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-width: 100%;
+  width: 100%;
   padding: 1.5rem 1.2rem;
   border-radius: 10px;
   width: 28rem;
   margin: 0 auto;
-  background: -webkit-linear-gradient(-45deg, #ecf0f5 0%, #d7bbf1 100%);
-  background: -o-linear-gradient(-45deg, #ecf0f5 0%, #d7bbf1 100%);
-  background: -ms-linear-gradient(-45deg, #ecf0f5 0%, #d7bbf1 100%);
-  background: -webkit-linear-gradient(315deg, #ecf0f5 0%, #d7bbf1 100%);
-  background: -o-linear-gradient(315deg, #ecf0f5 0%, #d7bbf1 100%);
-  background: linear-gradient(135deg, #ecf0f5 0%, #d7bbf1 100%);
+  @include linearGradient(#ecf0f5, #d7bbf1);
 
   &-icon {
     width: 100px;
@@ -54,10 +48,10 @@ width: 100%;
     position: relative;
     padding-bottom: 15px;
   }
-  
+
   &-subheading {
-      font-size: 1.4rem;
-      font-family: $font-secondary;
-      padding: 5px 8px;
+    font-size: 1.4rem;
+    font-family: $font-secondary;
+    padding: 5px 8px;
   }
 }

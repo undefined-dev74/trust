@@ -1,17 +1,6 @@
 .navbar {
   padding: 1.3rem 1rem;
-
-  background-color: $color-primary; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #a044ff,
-    #6a3093
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #a044ff,
-    #6a3093
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  @include primaryGradient(#a044ff,#6a3093);
   &-brand {
     padding-left: 7.5rem;
     font-family: $font-secondary;
@@ -20,10 +9,10 @@
 
     cursor: pointer;
     &-text {
-      color: #ffffff;
+      color: $color-white;
     }
     svg {
-      fill: #302f31;
+      fill: $color-charcol;
       cursor: pointer;
     }
   }
@@ -56,7 +45,7 @@
         position: absolute;
         content: ".";
         display: inline-block;
-        background-color: #ffffff;
+        background-color: $color-white;
         height: 2px;
         bottom: 0;
         right: 0;

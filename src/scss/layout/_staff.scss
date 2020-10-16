@@ -1,10 +1,9 @@
 .ftco-section {
   padding: 7rem 0;
   position: relative;
-  
+
   .container {
-  max-width: 90vw;
-    
+    max-width: 90vw;
   }
 }
 
@@ -17,17 +16,7 @@
     color: rgba(0, 0, 0, 0.3);
     letter-spacing: 2px;
     color: $color-primary;
-
-    background: -webkit-linear-gradient(
-      to right,
-      #a044ff,
-      #6a3093
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #a044ff,
-      #6a3093
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    @include primaryGradient(#a044ff, #6a3093);
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -52,13 +41,13 @@
     margin: 0 auto;
     background-position: top center;
     border-radius: 50%;
-    border: 3px solid $purple-gradient;
+    border: 3px solid #a044ff;
     transition: all 0.3s ease;
   }
 
   img,
   .img {
-    background-image: url('https://ibb.co/sW2XKBL');
+    background-image: url("https://ibb.co/sW2XKBL");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -77,23 +66,10 @@
     text-transform: uppercase;
     font-size: 1.5rem;
     font-weight: 500;
-    color: black;
-    color: #31de79;
     display: block;
     letter-spacing: 1px;
-
     color: $color-primary;
-
-    background: -webkit-linear-gradient(
-      to right,
-      #a044ff,
-      #6a3093
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #a044ff,
-      #6a3093
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    @include primaryGradient(#a044ff, #6a3093);
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -103,7 +79,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    
+
     .ftco-social li {
       list-style: none;
       display: inline-block;

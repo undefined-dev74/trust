@@ -31,20 +31,8 @@
       text-transform: uppercase;
       color: #d7bbf1;
       background: #ecf0f5;
-      background: -moz-linear-gradient(-45deg, #ecf0f5 0%, #d7bbf1 100%);
-      background: -webkit-gradient(
-        left top,
-        right bottom,
-        color-stop(0%, #ecf0f5),
-        color-stop(100%, #d7bbf1)
-      );
-      background: -webkit-linear-gradient(-45deg, #ecf0f5 0%, #d7bbf1 100%);
-      background: -o-linear-gradient(-45deg, #ecf0f5 0%, #d7bbf1 100%);
-      background: -ms-linear-gradient(-45deg, #ecf0f5 0%, #d7bbf1 100%);
-      background: -webkit-linear-gradient(315deg, #ecf0f5 0%, #d7bbf1 100%);
-      background: -o-linear-gradient(315deg, #ecf0f5 0%, #d7bbf1 100%);
-      background: linear-gradient(135deg, #ecf0f5 0%, #d7bbf1 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ecf0f5', endColorstr='#d7bbf1', GradientType=1 );
+      @include linearGradient(#ecf0f5, #d7bbf1);
+      background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
