@@ -1,6 +1,32 @@
 import React from "react";
 
 export default function Footer() {
+  const icons = ["twitter", "facebook", "instagram"];
+
+  const links = ["home", "about us", "services", "career", "contact us"];
+  const services = [
+    "Web Design",
+    "web development",
+    "Business Strategy",
+    "Data Analytics",
+    "App development",
+  ];
+  /**
+   * ! Unused data will use it later
+   * ? Looking for solution
+   const details = [
+    {
+      id: 1,
+      data: [
+        " 59, kesariya paras 2, Bhilwara (Rajasthan)",
+        "+91-9636001161",
+        "support@trsut.com",
+      ],
+      icons: ["map-marker-alt", "phone-alt", "envelope"],
+    },
+  ];
+   */
+
   return (
     <div className="footer footer-section">
       <div className="container">
@@ -14,15 +40,17 @@ export default function Footer() {
               </p>
               <ul className="footer__social list-unstyled float-md-left mt-4">
                 <li className="footer__social-icon">
-                  <a href="./" className="footer__social-icon-a">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                  <a href="./" className="footer__social-icon-a">
-                    <i className="fab fa-facebook"></i>
-                  </a>
-                  <a href="./" className="footer__social-icon-a">
-                    <i className="fab fa-instagram"></i>
-                  </a>
+                  {icons.map((icon) => {
+                    return (
+                      <a
+                        key={icons.indexOf(icon)}
+                        href="./"
+                        className="footer__social-icon-a"
+                      >
+                        <i className={`fab fa-${icon}`}></i>
+                      </a>
+                    );
+                  })}
                 </li>
               </ul>
             </div>
@@ -30,37 +58,20 @@ export default function Footer() {
           <div className="col-md">
             <div className="footer__widget mb-4 ml-md-4">
               <h2 className="footer__heading-2">Links</h2>
-              <ul className="list-unstyled">
-                <li className="mb-4">
-                  <a href="./">
-                    <i className="fas fa-arrow-right mr-2"></i>
-                    Home
-                  </a>
-                </li>
-                <li className="mb-4">
-                  <a href="./">
-                    <i className="fas fa-arrow-right mr-2"></i>
-                    About Us
-                  </a>
-                </li>
-                <li className="mb-4">
-                  <a href="./">
-                    <i className="fas fa-arrow-right mr-2"></i>
-                    Service
-                  </a>
-                </li>
-                <li className="mb-4">
-                  <a href="./">
-                    <i className="fas fa-arrow-right mr-2"></i>
-                    Career
-                  </a>
-                </li>
-                <li className="mb-2">
-                  <a href="./">
-                    <i className="fas fa-arrow-right mr-2"></i>
-                    Contact Us
-                  </a>
-                </li>
+              <ul className="list-unstyled ">
+                {links.map((link) => {
+                  return (
+                    <li
+                      key={links.indexOf(link)}
+                      className="mb-4 d-flex flex-row"
+                    >
+                      <a href="./">
+                        <i className="fas fa-arrow-right mr-2"></i>
+                        {link}
+                      </a>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           </div>
@@ -68,36 +79,16 @@ export default function Footer() {
             <div className="footer__widget mb-4 ml-md-4">
               <h2 className="footer__heading-2">Services</h2>
               <ul className="list-unstyled">
-                <li className="mb-4">
-                  <a href="./">
-                    <i className="fas fa-arrow-right mr-2"></i>
-                    Web Design
-                  </a>
-                </li>
-                <li className="mb-4">
-                  <a href="./">
-                    <i className="fas fa-arrow-right mr-2"></i>
-                    Web Development
-                  </a>
-                </li>
-                <li className="mb-4">
-                  <a href="./">
-                    <i className="fas fa-arrow-right mr-2"></i>
-                    Business Strategy
-                  </a>
-                </li>
-                <li className="mb-4">
-                  <a href="./">
-                    <i className="fas fa-arrow-right mr-2"></i>
-                    Data Analytics
-                  </a>
-                </li>
-                <li className="mb-2">
-                  <a href="./">
-                    <i className="fas fa-arrow-right mr-2"></i>
-                    App Development
-                  </a>
-                </li>
+                {services.map((service) => {
+                  return (
+                    <li key={services.indexOf(service)} className="mb-4">
+                      <a href="./">
+                        <i className="fas fa-arrow-right mr-2"></i>
+                        {service}
+                      </a>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           </div>
