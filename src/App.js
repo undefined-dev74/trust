@@ -6,8 +6,8 @@ import Contact from "./components/Contact";
 import Services from "./components/Services";
 import Technologies from "./components/Technologies";
 import Footer from "./components/Footer";
-
 import "bootstrap/dist/css/bootstrap.css";
+import './Scroll'
 import "./App.scss";
 
 function App() {

@@ -32,7 +32,7 @@ const services = () => {
       subHeading: `  Business intelligence, maintenance & support, system integration
                 and documentation - we have a full range of services to make
                 your e-commerce business a true success..`,
-      icon: "opencart",
+      icon: "aws",
     },
   ];
 

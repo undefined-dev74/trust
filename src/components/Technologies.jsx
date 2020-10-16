@@ -1,5 +1,5 @@
 import React from "react";
-// import { getClassNames, classList } from "dynamic-class-list";
+import { Slide, Fade, Zoom } from "react-reveal";
 
 export default function Technologies() {
   const icons = ["python", "node-js", "bootstrap", "react", "angular"];
@@ -20,28 +20,41 @@ export default function Technologies() {
         <div className="row align-items-center pt-md-5 d-flex ">
           {icons.map((icon) => {
             return (
-              <div
-                key={icons.indexOf(icon)}
-                className="col text-center mt-5 mt-md-0 "
-              >
-                <div className="technologies__banner-icon">
-                  <i className={`icon fab fa-${icon}`}></i>
+              <Slide down>
+                <div
+                  key={icons.indexOf(icon)}
+                  className="col text-center mt-5 mt-md-0 "
+                >
+                  <Fade left>
+                    <div className="technologies__banner-icon">
+                      <Zoom down>
+                        <i className={`icon fab fa-${icon}`}></i>
+                      </Zoom>
+                    </div>
+                  </Fade>
                 </div>
-              </div>
+              </Slide>
             );
           })}
         </div>
         <div className="row align-items-center pt-md-5 d-flex ">
           {icons1.map((icon1) => {
             return (
-              <div
-                key={icons1.indexOf(icon1)}
-                className="col text-center mt-5 mt-md-0 "
-              >
-                <div className="technologies__banner-icon">
-                  <i className={`icon fab fa-${icon1}`}></i>
+              <Slide up>
+                {" "}
+                <div
+                  key={icons1.indexOf(icon1)}
+                  className="col text-center mt-5 mt-md-0 "
+                >
+                  <Fade right>
+                    <div className="technologies__banner-icon">
+                      <Zoom top>
+                        <i className={`icon fab fa-${icon1}`}></i>
+                      </Zoom>
+                    </div>
+                  </Fade>
                 </div>
-              </div>
+              </Slide>
             );
           })}
         </div>

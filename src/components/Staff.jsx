@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Zoom, Fade } from "react-reveal";
 const Staff = () => {
   const users = [
     {
@@ -59,19 +59,23 @@ const Staff = () => {
                 <div className="col-md-6 col-lg">
                   <div className="staff__profile">
                     <div className="img-wrap d-flex align-items-stretch">
-                      <img
-                        className="img align-self-stretch"
-                        src={imgURL}
-                        alt="Staff-img"
-                      />
+                      <Zoom>
+                        <img
+                          className="img align-self-stretch"
+                          src={imgURL}
+                          alt="Staff-img"
+                        />
+                      </Zoom>
                     </div>
                   </div>
                   <div className="text d-flex align-items-center justify-content-center pt-4 text-center">
                     <div>
-                      <h3 className="mb-3 staff__text">{name}</h3>
+                      <Fade up>
+                        <h3 className="mb-3 staff__text">{name}</h3>
                       <span className="position staff__text-subheading mb-4">
                         {designation}
                       </span>
+                      </Fade>
                       <div className="faded staff__social">
                         <ul className="ftco-social text center mb-2">
                           {cla.map((cl) => {
@@ -79,6 +83,7 @@ const Staff = () => {
                               <li key={cla.indexOf(cl)}>
                                 <a href="/">
                                   <span className="icon">
+                                    
                                     <i className={`fab fa-${cl}`}></i>
                                   </span>
                                 </a>
