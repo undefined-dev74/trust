@@ -1,5 +1,6 @@
 .navbar {
   padding: 1.3rem 1rem;
+
   background-color: $color-primary; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
@@ -16,11 +17,10 @@
     font-family: $font-secondary;
     font-size: 3rem;
     letter-spacing: 2px;
-   
+
     cursor: pointer;
     &-text {
-    color: #ffffff;
-
+      color: #ffffff;
     }
     svg {
       fill: #302f31;
@@ -30,7 +30,8 @@
 
   &-nav {
     padding-right: 4rem;
-
+    display: flex;
+    justify-content: flex-end;
     .nav-item {
       position: relative;
       display: inline-block;

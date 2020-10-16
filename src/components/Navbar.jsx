@@ -3,8 +3,8 @@ import React from "react";
 const Navbar = () => {
   const links = ["Home", "about us", "services", "career", "contact us"];
   return (
-    <header className="container">
-      <nav className="navbar navbar-light  navbar-expand-lg navbar-expand-md">
+    <header className="container-fluid">
+      <nav className="navbar navbar-light navbar-expand-lg navbar-expand-md navbar-expand-sm ">
         <a className="navbar-brand animate__pulse animate__repeat-2" href="./">
           <svg
             width="1.2em"
@@ -18,18 +18,21 @@ const Navbar = () => {
           </svg>
           <span className="navbar-brand-text">TRUST</span>
         </a>
-
-        <ul className="navbar-nav">
-          {links.map((link) => {
-            return (
-              <li key={links.indexOf(link)} className={`nav-item ${link === 'Home' ? 'active' :''}`}>
-                <a className="nav-link" href="./">
-                  {link}
-                </a>
-              </li>
-            );
-          })}
-        </ul>
+        
+          <ul className="navbar-nav ">
+            {links.map((link) => {
+              return (
+                <li
+                  key={links.indexOf(link)}
+                  className={`nav-item ${link === "Home" ? "active" : ""}`}
+                >
+                  <a className="nav-link" href="./">
+                    {link}
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
       </nav>
     </header>
   );
